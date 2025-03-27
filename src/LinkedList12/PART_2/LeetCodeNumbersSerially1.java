@@ -1,6 +1,6 @@
 //package LinkedList12.PART_2;
 
-// leetcode 237, 876, 2095 , 160, 141, 142,202(HomeWork),83,82,61
+// leetcode 237, 876, 2095 , 160, 141, 142,202(HomeWork),83,82,61,2326(Solve bro i didn't tried this one),21,148,23
 
 
 // 1st approach - for LeetCode 876
