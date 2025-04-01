@@ -16,14 +16,13 @@ This repository contains my **DSA solutions in Java**, including **basic to adva
 ## 📂 Folder Structure  
 Each topic has its own folder containing solutions to related LeetCode problems, and the order of topics is structured to **build logic step-by-step**.
 
-```
-📂 **Example: Linked List Folder**
+    // should study according to the order example : PatternPrinting0 -> at end 0 is there then you should start from here and inside also at the end of file name i have mentioned numbers ex : 0,1,2,3... etc  (you should start from 0 and 1 etc)
   - 0 PatternPrinting => you should study first => inside folder also i have mentioned serial numbers after file name
   - 1 Arrays 
   - 2 2D Arrays & Multidimensional Arrays
   .......
   .......
-```
+
 
 ## 🎯 Goals  
 ✔️ Solve **300+ LeetCode problems**  
