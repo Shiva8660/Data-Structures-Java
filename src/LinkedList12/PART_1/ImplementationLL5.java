@@ -5,25 +5,6 @@ class SLL{
     private Node tail;
     private int size;
 
-    void insertAtTail(int val){
-        Node temp = new Node(val);
-        if(head == null) head = tail = temp;
-        else{
-            tail.next = temp;
-            tail = temp;
-        }
-        size++; // dynamically counting size -> if you want to create method you can
-    }
-
-    void displayNodes(){
-        Node temp = head;
-        while(temp != null){
-            System.out.print(temp.value + " ");
-            temp = temp.next;
-        }
-        System.out.println();
-    }
-
     void insertAtHead(int val){
         Node temp = new Node(val);
         if(head == null) head = tail = temp;
@@ -37,18 +18,19 @@ class SLL{
     void insertAnywhere(int idx,int value){
         Node temp = new Node(value);
 
+        if(idx > size){
+            System.out.println("Invalid Position !!");
+            return;
+        }
         if(idx == 0){
             insertAtHead(value);
             return;
         }
         if(idx == size){
-            insertAtHead(value);
+            insertAtTail(value);
             return;
         }
-        if(idx > size){
-            System.out.println("Invalid Position !!");
-            return;
-        }
+
         Node x = head;
 
         for (int i = 0; i < idx-1; i++) {
@@ -59,13 +41,21 @@ class SLL{
         size++;
     }
 
+    void insertAtTail(int val){
+        Node temp = new Node(val);
+        if(head == null) head = tail = temp;
+        else{
+            tail.next = temp;
+            tail = temp;
+        }
+        size++; // dynamically counting size -> if you want to create method you can
+    }
 
     void deleteAtHead() throws Error {
         if(head == null) throw new Error("List is Empty !!");
 
         head = head.next;
         size--;
-
     }
 
     void deleteAnyValue(int idx) throws Error{
@@ -119,7 +109,17 @@ class SLL{
     int getSize(){
         return size;
     }
+
+    void displayNodes(){
+        Node temp = head;
+        while(temp != null){
+            System.out.print(temp.value + " ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
 }
+
 
 public class ImplementationLL5 {
     public static void main(String[] args) {
