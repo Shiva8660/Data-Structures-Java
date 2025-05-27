@@ -38,7 +38,7 @@ public class findLeftMid2 {
             slow = slow.next;
             fast = fast.next.next;
         }
-        return (fast==null) ? prev : slow;
+        return slow;
     }
     
     public static void main(String[] args) {
@@ -47,11 +47,14 @@ public class findLeftMid2 {
         Node c = new Node(30);
         Node d = new Node(40);
         Node e = new Node(50);
+        Node f = new Node(50);
+
 
         a.next = b;
         b.next = c;
         c.next = d;
         d.next = e;
+        e.next = f;
 
         PrintNodes(a);
 

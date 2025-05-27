@@ -3,10 +3,10 @@ package LinkedList12.PART_1;
 public class PrintingUsingTemp3 {
 
     public static void PrintNodes(Node head){
-        Node temp = head;
-        while(temp != null){
-            System.out.println(temp.value);
-            temp = temp.next;
+        // Node temp = head;
+        while(head != null){
+            System.out.println(head.value);
+            head = head.next;
         }
     }
 
@@ -23,6 +23,8 @@ public class PrintingUsingTemp3 {
         d.next = e;
 
         PrintNodes(a);
+
+        System.out.println(a.value);
 
     }
 }
