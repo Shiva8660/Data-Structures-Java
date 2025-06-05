@@ -3,8 +3,8 @@ package LinkedList12.PART_3;
 
 class Node{
     int val;
-    Node next;
-    Node prev;
+    Dnode next;
+    Dnode prev;
 
     Node(int val){
         this.val = val;
@@ -12,12 +12,12 @@ class Node{
 }
 
 class Dll{
-    Node head;
-    Node tail;
+    Dnode head;
+    Dnode tail;
     int size;
 
     void display(){
-        Node temp = head;
+        Dnode temp = head;
         while(temp != null){
             System.out.print(temp.val + " ");
             temp = temp.next;
@@ -26,7 +26,7 @@ class Dll{
     }
 
     void insertAtHead(int val){
-        Node temp = new Node(val);
+        Dnode temp = new Dnode(val);
         if(size == 0) head = tail = temp;
         else {
             temp.next = head;
@@ -37,7 +37,7 @@ class Dll{
     }
 
     void insertAtAnyIndex(int idx,int val){
-        Node temp = new Node(val);
+        Dnode temp = new Dnode(val);
 
 
         if(idx < 0 || idx > size-1){
@@ -47,11 +47,11 @@ class Dll{
         else if(idx == 0) insertAtHead(val);
         else if(idx == size-1) insertAtTail(val);
 
-        Node x = head;
+        Dnode x = head;
         for(int i=0;i<idx-1;i++){
             x = x.next;
         }
-        Node y = x.next;
+        Dnode y = x.next;
 
         x.next = temp;  temp.prev = x;
         y.prev = temp;  temp.next = y;
@@ -59,7 +59,7 @@ class Dll{
     }
 
     void insertAtTail(int val){
-        Node temp = new Node(val);
+        Dnode temp = new Dnode(val);
         if(size == 0) head = tail = temp;
         else {
             tail.next = temp;
@@ -89,7 +89,7 @@ class Dll{
         else if(idx == 0) deleteAtHead();
         else if(idx == size-1) deleteAtTail();
 
-        Node temp = head;
+        Dnode temp = head;
         for(int i=0;i<idx-1;i++){
             temp = temp.next;
         }
@@ -116,24 +116,24 @@ class Dll{
 }
 
 public class implementationOfDLL {
-    public static void print(Node head){
-        Node temp = head;
+    public static void print(Dnode head){
+        Dnode temp = head;
         while(temp != null){
             System.out.print(temp.val + " ");
             temp = temp.next;
         }
         System.out.println();
     }
-    public static void printReverse(Node tail){
-        Node temp = tail;
+    public static void printReverse(Dnode tail){
+        Dnode temp = tail;
         while(temp != null){
             System.out.print(temp.val + " ");
             temp = temp.prev;
         }
         System.out.println();
     }
-    public static void printFromAnyNode(Node randomNode){
-        Node temp = randomNode;
+    public static void printFromAnyNode(Dnode randomNode){
+        Dnode temp = randomNode;
         while (temp.prev != null){
             temp = temp.prev;
         }
