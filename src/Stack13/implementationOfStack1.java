@@ -58,17 +58,26 @@ class Stack{
 
 public class implementationOfStack1 {
     public static void main(String[] args) {
-        Stack st = new Stack();
-        st.push(10);
-        st.push(20);
-        st.push(30);
-        st.push(40);
-        st.push(50);
+        Stack stack = new Stack();
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+        stack.push(50);
 
-        st.show();
+        System.out.println("Original stack..");
+        stack.show();
 
-        System.out.println(st.isEmpty());
-        System.out.println(st.isFull());
+        Stack revStack = new Stack();
+
+        while(!stack.isEmpty()){
+            revStack.push(stack.pop());
+        }
+
+        System.out.println();
+        System.out.println("Reversed stack...");
+        revStack.show();
+
         
 
     }
