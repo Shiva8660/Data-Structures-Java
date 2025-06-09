@@ -2,7 +2,7 @@ package Stack13;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class pushAtAnyIndex {
+public class pushAtAnyIndex3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Stack<Integer> orgStack = new Stack();

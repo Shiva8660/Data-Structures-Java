@@ -1,7 +1,7 @@
 package Stack13;
 import java.util.Stack;
 
-public class copyStack {
+public class copyStack2 {
     public static void main(String[] args) {
         Stack<Integer> orgStack = new Stack();
         orgStack.push(10);
