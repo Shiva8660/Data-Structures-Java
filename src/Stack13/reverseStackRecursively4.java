@@ -7,10 +7,11 @@ public class reverseStackRecursively4 {
 
     public static void displayReverseUsingRecursioin(Stack<Integer> st){
         if(st.isEmpty()) return;
-        int top = st.pop();
-        System.out.println(top);
+        int data = st.pop();
+        // System.out.print(data + " ");  // to print reverse
         displayReverseUsingRecursioin(st);
-        st.push(top);
+        System.out.print(data + " ");      // to print as it is
+        st.push(data);
     }
 
     public static void main(String[] args) {
