@@ -1,7 +1,7 @@
 package Stack13;
 import java.util.Stack;
 
-public class PostFixToInfix11 {
+public class PostFixToPreFix12 {
 
     public static boolean isOperator(char ch){
         return ch == '+' || ch == '-' || ch == '*' || ch == '/';
@@ -23,7 +23,7 @@ public class PostFixToInfix11 {
                 String v2 = val.pop();
                 String v1 = val.pop();
 
-                String res = "(" + v1 + ch + v2 + ")";
+                String res = ch + v1 + v2;
 
                 val.push(res);
 
@@ -34,5 +34,6 @@ public class PostFixToInfix11 {
 
     }
 }
+
 
 

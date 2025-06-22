@@ -77,8 +77,9 @@ public class implementationOfStack1 {
         System.out.println();
         System.out.println("Reversed stack...");
         revStack.show();
-
-        
-
     }
 }
+// Remaining
+// Largest Rectangle in HistoGram
+// Stock span Problem
+// Number of visible of people in queue
