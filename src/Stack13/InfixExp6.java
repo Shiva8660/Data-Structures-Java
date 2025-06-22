@@ -3,7 +3,7 @@ import java.util.Stack;
 
 public class InfixExp6 {
     public static void main(String[] args) {
-        String str = "9 - 5 + 3 * 4 / 6";
+        String str = "9 - (5 + 3) * 4 / 6";
 
         Stack<Integer> numStack = new Stack<>();
         Stack<Character> opStack = new Stack<>();
@@ -13,9 +13,17 @@ public class InfixExp6 {
             if (ch == ' ') continue;
 
             if (Character.isDigit(ch)) {
-                numStack.push((int)ch-48); // '0' == 48
+                numStack.push(ch - '0');  // convert char digit to int
+            } else if (ch == '(') {
+                opStack.push(ch);
+            } else if (ch == ')') {
+                while (!opStack.isEmpty() && opStack.peek() != '(') {
+                    evaluate(numStack, opStack);
+                }
+                if (!opStack.isEmpty()) opStack.pop();  // pop '('
             } else if (isOperator(ch)) {
                 while (!opStack.isEmpty() && precedence(opStack.peek()) >= precedence(ch)) {
+                    if (opStack.peek() == '(') break;
                     evaluate(numStack, opStack);
                 }
                 opStack.push(ch);
