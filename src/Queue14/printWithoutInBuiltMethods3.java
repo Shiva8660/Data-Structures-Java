@@ -17,7 +17,6 @@ public class printWithoutInBuiltMethods3 {
         while (helper.size() > 0){
             que.add(helper.remove());
         }
-        
 
     }
 }
