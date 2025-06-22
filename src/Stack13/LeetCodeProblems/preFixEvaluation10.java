@@ -13,7 +13,7 @@ public class preFixEvaluation10 {
     }
 
     public static void main(String[] args) {
-        String str = "-9/*+5346";
+        String str = "-8/*+5376";
 
         Stack<Integer> val = new Stack();
 
