@@ -151,6 +151,9 @@ public class implementationOFDQ_Using_DLL6 {
 
         ob.printDQ();
 
+        System.out.println(ob.getFront());
+        System.out.println(ob.getRear());
+
 
 
 
