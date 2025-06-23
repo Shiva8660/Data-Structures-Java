@@ -4,7 +4,7 @@ import java.util.*;
 
 class ReverseFirstKProcessor {
     public Queue<Integer> process(Queue<Integer> inputQueue, int k) {
-        
+
         if (inputQueue == null || k <= 0 || k > inputQueue.size()) return inputQueue;
         Stack<Integer> tempStack = new Stack<>();
         int remaining = inputQueue.size() - k;
