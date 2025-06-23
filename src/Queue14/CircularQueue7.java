@@ -1,5 +1,6 @@
 package Queue14;
 
+// home work - implement using LL
 
 class cirQueue{
     private int rear = -1, front = -1, size = 0;
@@ -118,8 +119,12 @@ public class CircularQueue7 {
         ob.add(20);
         ob.add(30);
         ob.add(40);
+        ob.add(50);
 
-        ob.printQueueMethod1();
+        ob.printQueueMethod2();
+
+        System.out.println(ob.remove());
+        ob.add(5);
         ob.printQueueMethod2();
 
 
