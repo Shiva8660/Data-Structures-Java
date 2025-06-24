@@ -1,5 +1,7 @@
 package Queue14;
 
+// they never thought about inbuild deque and study about that
+
 class DNode{
     int val;
     DNode next;
