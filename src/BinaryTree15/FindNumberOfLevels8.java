@@ -23,6 +23,7 @@ public class FindNumberOfLevels8 {
         c.right = f;
         c.left = g;
 
+        // to find height => (Total Number of Levels - 1)
         System.out.println("The total number of level's is : " + CountNumberOfLevels(a));
     }
 }
