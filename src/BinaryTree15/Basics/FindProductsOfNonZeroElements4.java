@@ -1,4 +1,6 @@
-package BinaryTree15;
+package BinaryTree15.Basics;
+
+import BinaryTree15.Node;
 
 public class FindProductsOfNonZeroElements4 {
 

@@ -1,11 +1,14 @@
-package BinaryTree15;
+package BinaryTree15.Basics;
 
-public class FindNumberOfNodes7 {
+import BinaryTree15.Node;
 
-    public static int CountNodes(Node root){
-        if(root == null) return 0;
+public class FindMaxValue5 {
 
-        return 1 + CountNodes(root.left) + CountNodes(root.right);
+
+    public static int findMaximumOfNodes(Node root){
+        if(root == null) return Integer.MIN_VALUE;
+
+        return Math.max(root.val, Math.max(findMaximumOfNodes(root.left),findMaximumOfNodes(root.right)));
     }
 
     public static void main(String[] args) {
@@ -23,9 +26,8 @@ public class FindNumberOfNodes7 {
         c.right = f;
         c.left = g;
 
-        System.out.println("The total number of nodes is : " + CountNodes(a));
+        System.out.println("The maximum element : " + findMaximumOfNodes(a));
     }
 }
-
 
 

@@ -1,4 +1,4 @@
-package BinaryTree15;
+package BinaryTree15.Basics;
 
 class Node{
     int val;

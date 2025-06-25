@@ -1,11 +1,13 @@
-package BinaryTree15;
+package BinaryTree15.Basics;
 
-public class FindTheMinimumValue6 {
+import BinaryTree15.Node;
 
-    public static int findMinimum(Node root){
-        if(root == null) return Integer.MAX_VALUE;
+public class FindNumberOfNodes7 {
 
-        return Math.min(root.val, Math.min(findMinimum(root.left), findMinimum(root.right)));
+    public static int CountNodes(Node root){
+        if(root == null) return 0;
+
+        return 1 + CountNodes(root.left) + CountNodes(root.right);
     }
 
     public static void main(String[] args) {
@@ -23,8 +25,9 @@ public class FindTheMinimumValue6 {
         c.right = f;
         c.left = g;
 
-        System.out.println("The minimum element : " + findMinimum(a));
+        System.out.println("The total number of nodes is : " + CountNodes(a));
     }
 }
+
 
 
