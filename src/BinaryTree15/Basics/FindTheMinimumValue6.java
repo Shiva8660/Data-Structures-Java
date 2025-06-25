@@ -1,7 +1,5 @@
 package BinaryTree15.Basics;
 
-import BinaryTree15.Node;
-
 public class FindTheMinimumValue6 {
 
     public static int findMinimum(Node root){

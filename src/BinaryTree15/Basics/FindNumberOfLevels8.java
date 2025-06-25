@@ -1,7 +1,5 @@
 package BinaryTree15.Basics;
 
-import BinaryTree15.Node;
-
 public class FindNumberOfLevels8 {
 
     public static int CountNumberOfLevels(Node root){
