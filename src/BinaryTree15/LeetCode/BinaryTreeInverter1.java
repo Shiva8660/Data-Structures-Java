@@ -1,21 +1,21 @@
 package BinaryTree15.LeetCode;
 
-class TreeNode {
+class Node {
     int val;
-    TreeNode left;
-    TreeNode right;
+    Node left;
+    Node right;
 
-    TreeNode(int val) {
+    Node(int val) {
         this.val = val;
     }
 }
 
 class TreeInverter {
-    public TreeNode invert(TreeNode root) {
+    public Node invert(Node root) {
         if (root == null) return null;
         if (root.left == null && root.right == null) return root;
 
-        TreeNode temp = root.left;
+        Node temp = root.left;
         root.left = root.right;
         root.right = temp;
 
@@ -28,21 +28,21 @@ class TreeInverter {
 
 public class BinaryTreeInverter1 {
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(4);
-        root.left = new TreeNode(2);
-        root.right = new TreeNode(7);
-        root.left.left = new TreeNode(1);
-        root.left.right = new TreeNode(3);
-        root.right.left = new TreeNode(6);
-        root.right.right = new TreeNode(9);
+        Node root = new Node(4);
+        root.left = new Node(2);
+        root.right = new Node(7);
+        root.left.left = new Node(1);
+        root.left.right = new Node(3);
+        root.right.left = new Node(6);
+        root.right.right = new Node(9);
 
         TreeInverter inverter = new TreeInverter();
-        TreeNode invertedRoot = inverter.invert(root);
+        Node invertedRoot = inverter.invert(root);
 
         printInorder(invertedRoot);
     }
 
-    static void printInorder(TreeNode root) {
+    static void printInorder(Node root) {
         if (root == null) return;
         printInorder(root.left);
         System.out.print(root.val + " ");
