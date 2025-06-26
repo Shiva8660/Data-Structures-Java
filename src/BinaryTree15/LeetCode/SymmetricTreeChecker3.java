@@ -43,7 +43,7 @@ public class SymmetricTreeChecker3 {
     }
 
     public static void main(String[] args) {
-        SymmetricTreeChecker checker = new SymmetricTreeChecker();
+        SymmetricTreeChecker3 checker = new SymmetricTreeChecker3();
 
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
