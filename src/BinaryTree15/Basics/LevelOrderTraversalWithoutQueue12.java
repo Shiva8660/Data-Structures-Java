@@ -1,9 +1,15 @@
 package BinaryTree15.Basics;
 import java.util.Scanner;
 
-public class LevelOrderTraversal_BFS_WithoutQueue12 {
+// lever order traversal using DFS instead of BFS like generally using queue
+// DFS - > for every call we are traversing whole tree and when lev matches we are printing we can generally call it DFS
+// for every call in loop we are calling the function -> TC = (Height of the tree * n)
+
+public class LevelOrderTraversalWithoutQueue12 {
     static int lev;
 
+    // you can see the code we have used is of preorder and you can make it preOrder or in order or post order => at the end output is same till left call is in top
+    // and if you replace first right call and next to that left then you will get answer in reverse order
     public static void NthLevel(Node root,int x){
         if(root == null) return;
         if(x == lev) System.out.print(root.val + " ");
@@ -26,17 +32,13 @@ public class LevelOrderTraversal_BFS_WithoutQueue12 {
         c.left = f;
         c.right = g;
 
-
+        System.out.print("___Level Order Traversal Without queue___ ");
         System.out.println();
-        System.out.print("Level Order Traversal Without queue : ");
         for (int i = 0; i <= 3 ; i++) {
             lev = i;
             NthLevel(a,0);
+            System.out.println();
         }
-
-
-
-
     }
 }
 
