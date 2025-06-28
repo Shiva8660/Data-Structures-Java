@@ -3,14 +3,18 @@
 This repository contains my **DSA solutions in Java**, including **basic to advanced problems** from LeetCode, categorized by topics.
 
 ## 📌 Topics Covered  
-- ✅ 1️⃣ Pattern Printing  
-- ✅ 2️⃣ Arrays  
-- ✅ 3️⃣ 2D Arrays & Multidimensional Arrays  
-- ✅ 4️⃣ Strings & StringBuilders  
-- ✅ 5️⃣ Sorting Algorithms (Basic & Advanced)  
-- ✅ 6️⃣ Binary Search  
-- ✅ 7️⃣ Recursion  
-- ✅ 8️⃣ Linked List  
+- Pattern Printing
+- Arrays
+- 2D Arrays & Multidimensional Arrays
+- Strings & StringBuilders
+- Sorting Algorithms (Basic & Advanced)
+- Binary Search
+- Recursion
+- Linked List
+- Stack
+- Queue
+- Binary Tree
+- Binary Search Tree
 - 🔜 More topics coming soon!
 
 ## 📂 Folder Structure  
