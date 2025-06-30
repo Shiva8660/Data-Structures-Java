@@ -15,6 +15,7 @@ public class FindInorderPredecessorAndSuccessor4 {
 
         find(root.left, key, ob);
 
+        // instead of these 5 lines I can create a list or array and comparing with I can find easily
         if(root.val == key){
             ob.p = prev;
         }
@@ -50,7 +51,7 @@ public class FindInorderPredecessorAndSuccessor4 {
 
 
         find(a, key, ob);
-        
+
         if (ob.p != null) System.out.println("Predecessor: " + ob.p.val);
         else System.out.println("Predecessor: None");
 
