@@ -1,8 +1,8 @@
-package HashMaps17;
+package HashSetAndMap17.HashSet;
 
 import java.util.HashSet;
 
-public class basicHashMap1 {
+public class AboutBasicHashSet1 {
     public static void main(String[] args) {
 
         // you can store character or strings ets
