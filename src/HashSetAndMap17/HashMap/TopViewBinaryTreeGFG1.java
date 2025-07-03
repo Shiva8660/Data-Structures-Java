@@ -2,6 +2,9 @@ package HashSetAndMap17.HashMap;
 import java.util.*;
 
 
+// to find bottom view of binary tree
+// solve from any online coding platform
+// copy this code just remove -> if (!levelMap.containsKey(level)) => without this values will get overriden
 
 class BinaryTreeNode {
     int data;
