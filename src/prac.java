@@ -1,3 +1,5 @@
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.PriorityQueue;
 
 class SLL1{
@@ -106,9 +108,24 @@ class SLL1{
 
 }
 
+class Triplet{
+   int dist;
+   int x;
+   int y;
+
+
+   Triplet(int dist, int x, int y){
+       this.dist = dist;
+       this.x = x;
+       this.y = y;
+   }
+}
 
 public class prac {
 
+
+
+    
 
 
     public static void main(String[] args) {
