@@ -17,6 +17,8 @@ This repository contains my **DSA solutions in Java**, including **basic to adva
 - Binary Search Tree
 - HashSet and HashMap
 - heap(Priority Queue)
+- Prefix sum
+- Sliding window
 - 🔜 More topics coming soon!
 
 ## 📂 Folder Structure  
