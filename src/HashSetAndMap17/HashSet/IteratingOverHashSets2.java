@@ -17,7 +17,7 @@ public class IteratingOverHashSets2 {
 
 
 
-//        // you can't to add or remove while Iterating and For sure it will give error
+//        // you can't add or remove while Iterating and For sure it will give error
 //        for(int ele : s){
 //            System.out.print(ele + " ");
 //            s.add(ele);
@@ -31,7 +31,7 @@ public class IteratingOverHashSets2 {
         s.clear();
         System.out.println(s);
 
-        // you are going same element twice or thrice there will only one occurrence in hashSet
+        // you are going to add same element twice or thrice there will be one occurrence in hashSet(No duplicates are allowed)
         s.add(1); s.add(2);
         s.add(1); s.add(2);
         s.add(1); s.add(2);

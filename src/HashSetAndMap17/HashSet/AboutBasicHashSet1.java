@@ -18,7 +18,7 @@ public class AboutBasicHashSet1 {
         // When we print there is no order and values are stored at random
         System.out.println(set);
 
-        // search or contains (tree or false) -> in set with TC = O(1)
+        // search or contains (true or false) -> in set with TC = O(1)
         System.out.println(set.contains(200));
         System.out.println(set.contains(-8));
         System.out.println(set.contains(1));
