@@ -23,7 +23,7 @@ public class IterateInHashMap2 {
         }
         System.out.println();
 
-        // printing both at the same time
+        // printing after storing in a variable
         for(String key : map.keySet()){
             int val = map.get(key);
             System.out.println(key + " : " + val);

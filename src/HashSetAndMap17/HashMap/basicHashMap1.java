@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class basicHashMap1 {
     public static void main(String[] args) {
-        // key and value we usually insert in hashmap
+        // key and value we usually insert in a hashmap
         // In this also all basic operation runs in O(1) TC like hashSet
         HashMap<String, Integer> map = new HashMap<>();
 
@@ -59,13 +59,5 @@ public class basicHashMap1 {
         System.out.println(map.get("Prasad"));
         System.out.println(map.get("Reddy"));
         System.out.println(map.get("Free fire"));
-
-
-
-
-
-
-
-
     }
 }
