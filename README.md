@@ -19,6 +19,7 @@ This repository contains my **DSA solutions in Java**, including **basic to adva
 - heap(Priority Queue)
 - Prefix sum
 - Sliding window
+- Dyanamic programming
 - 🔜 More topics coming soon!
 
 ## 📂 Folder Structure  
